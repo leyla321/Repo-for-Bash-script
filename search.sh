@@ -22,7 +22,6 @@ while [[ $# -gt 0 ]]; do
     esac
 done
 
-# Check if file exists
 if [[ ! -f "$FILE" ]]; then
     echo "Error: File $FILE does not exist."
     exit 1
