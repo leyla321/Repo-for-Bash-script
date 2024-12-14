@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 FILES=()
 EXTENSION=""
 REPLACEMENT=""
@@ -6,12 +6,17 @@ REPLACEMENT=""
 while [[ $# -gt 0 ]]; do
         case $1 in
                 --file)
-                        Files+=($2)
+                        FILES+=($2)
                         shift
                         shift
                         ;;
                         --extension)
                                 EXTENSION=$2
+                                shift
+                                shift
+                                ;;
+                        --replacement)
+                                REPLACEMENT=$2
                                 shift
                                 shift
                                 ;;
